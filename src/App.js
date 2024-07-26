@@ -8,18 +8,18 @@ import MorePage from "./pages/MorePage/MorePage";
 // import Header from "./pages/MainPage/Header/Header";
 import { Navigation } from "@mui/icons-material";
 import { Container } from "@mui/material";
+import Layout from "./components/Layout";
 
 function App() {
   return (
-  
-      
-        <Routes>
-          <Route path='/' element={<MainPage/>} />
-          <Route path='/library' element={<LibraryPage/>} />
-          <Route path="/contact" element={<MorePage/>} />
-        </Routes>
-    
 
+    <Layout>
+      <Routes>
+        <Route path='/' element={<MainPage />} />
+        <Route path='/library' element={<LibraryPage />} />
+        <Route path="/contact" element={<MorePage />} />
+      </Routes>
+    </Layout>
   );
 }
 

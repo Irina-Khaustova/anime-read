@@ -1,10 +1,9 @@
 import { Typography } from "@mui/material";
-import Header from "../../MainPage/Header/Header";
+import Header from "../../../components/Header/Header";
 
 function LibraryPage() {
     return (
       <>
-      <Header></Header>
       <Typography id='fdhsf'>yugduysgu</Typography>
         </>
     );

@@ -1,5 +1,4 @@
 import { Container, Grid, GoodsItem } from "@mui/material";
-import Header from "./Header/Header";
 import { useEffect, useState } from "react";
 
 function MainPage() {
@@ -22,8 +21,6 @@ useEffect(()=> {
 
     return (
       <>
-     <Header></Header>
-     
      <div>{items}</div>
      </>
     );
