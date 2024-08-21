@@ -1,11 +1,11 @@
-import { Container, Grid, GoodsItem } from "@mui/material";
-import Header from "./Header/Header";
+import { Grid, GoodsItem, Telegraphy} from "@mui/material";
 
-function Choice({goods}) {
+function Choice({items}) {
     return (
       <>
+     <Telegraphy>{items.text}</Telegraphy>
      <Grid container spacing={2}>
-            {goods.map((item) => (
+            {items.map((item) => (
                 <GoodsItem key={item.id}  />
             ))}
         </Grid>
